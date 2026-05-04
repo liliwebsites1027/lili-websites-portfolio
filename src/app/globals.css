@@ -1,26 +1,40 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* This is the v4 way to pull in the core engine */
+@config "../../tailwind.config.ts"; /* This links your manual config file */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  body {
+    background-color: #e9e0d2; /* --background-cream */
+    color: #2d1e16; /* --text-main */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Styling for the elegant italicized headers from image_a7503f.jpg */
+  h1,
+  h2,
+  h3 {
+    @apply italic font-serif tracking-tight;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 rounded-full bg-white text-[#5c4033] 
+           font-medium transition-all hover:scale-105 active:scale-95;
+  }
+
+  .design-card {
+    @apply bg-[#f5f0e8] rounded-[2rem] p-6 shadow-sm border border-white/20;
+  }
+
+  .form-input {
+    @apply w-full bg-[#dccdb9] border-none rounded-lg p-4 
+           placeholder-[#5c4033] focus:ring-2 focus:ring-[#5c4033];
+  }
+}
+
+.bg-dark-section {
+  background-color: #5c4033; /* --accent-brown */
+  color: #ffffff;
 }
