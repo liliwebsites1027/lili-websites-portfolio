@@ -9,7 +9,7 @@ const About = () => {
           - drop-shadow-[-6px_4px_4px_rgba(0,0,0,0.3)]: 
             The negative first value (-6px) pushes the shadow to the LEFT.
       */}
-      <h2 className="font-serif text-[64px] italic font-medium text-white mb-4 drop-shadow-[-6px_4px_3px_rgba(0,0,0,0.4)]">
+      <h2 className="font-serif text-[64px] italic font-medium text-white mb-12 drop-shadow-[-6px_4px_3px_rgba(0,0,0,0.4)] -mt-4">
         About Us
       </h2>
 

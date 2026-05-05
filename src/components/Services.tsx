@@ -4,12 +4,12 @@ import Image from "next/image";
 const Services = () => {
   return (
     /* py-10 and -mt-20 to keep the section pushed high and consistent */
-    <section className="w-full bg-[#EFE7DA] py-10 flex flex-col items-center overflow-hidden -mt-20 relative z-20">
+    <section className="w-full bg-[#EFE7DA] pb-12 pt-4 flex flex-col items-center overflow-hidden -mt-6 relative z-20">
       {/* 
           Services Label: 
           Consistent with previous sections.
       */}
-      <h2 className="font-serif text-[64px] italic font-medium text-white mb-4 drop-shadow-[-6px_4px_3px_rgba(0,0,0,0.3)]">
+      <h2 className="font-serif pb-8 text-[64px] italic font-medium text-white mb-4 drop-shadow-[-6px_4px_3px_rgba(0,0,0,0.3)]">
         Services
       </h2>
 
@@ -24,7 +24,7 @@ const Services = () => {
             Image Placeholder:
             Update the 'src' path below with your service image.
         */}
-        <div className="relative w-full h-full">
+        <div className="relative p-10 w-full h-full">
           <Image
             src="/services.png"
             alt="Service Image"

@@ -26,9 +26,9 @@ const ProductShowcase = () => {
           </p>
         </div>
 
-        {/* Center: Video Component centered within the available space */}
+        {/* Center: Video Component pushed further right */}
         <div className="flex-1 flex justify-start">
-          <div className="w-32 h-32 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
+          <div className="w-32 h-32 ml-14 bg-gray-50 rounded-2xl flex items-center justify-center overflow-hidden">
             <video
               ref={videoRef}
               autoPlay

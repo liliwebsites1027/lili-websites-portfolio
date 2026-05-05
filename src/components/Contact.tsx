@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="w-full bg-[#EFE7DA] py-20 px-6 flex flex-col items-center">
+    <section className="w-full bg-[#EFE7DA] px-6 flex flex-col items-center">
       {/* Heading */}
       <h2 className="font-serif text-[40px] leading-tight text-[#1A1A1A] mb-12 text-center">
         Thinking about <br /> working with us?

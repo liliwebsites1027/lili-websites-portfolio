@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="w-full bg-[#EFE7DA] py-16 px-6 flex flex-col items-center -mt-20 relative z-20">
+    <section className="w-full bg-[#EFE7DA] py-6 px-6 flex flex-col items-center -mt-20 relative z-20">
       {/* 
           Projects Label: 
           Consistent with About Us and Tech Stack:
