@@ -1,12 +1,11 @@
 import Hero from "@/components/Hero";
+import ProductShowcase from "@/components/ProductShowcase";
 
-export default function Page() {
+export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f3e9dc]">
-      {/* Hero Element */}
+    <main className="bg-[#EFE7DA] min-h-screen">
       <Hero />
-
-      {/* You can add more components here later */}
+      <ProductShowcase />
     </main>
   );
 }
