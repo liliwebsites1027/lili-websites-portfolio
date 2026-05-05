@@ -16,7 +16,7 @@ const ProductShowcase = () => {
     /* Removed px-2 to allow container to touch screen edges */
     <section className="w-full bg-[#EFE7DA] flex flex-col items-center px-0 pb-12">
       {/* Container: Changed w-[96%] to w-full to touch mobile edges */}
-      <div className="w-full max-w-[420px] bg-white rounded-[40px] py-4 pr-6 pl-3 shadow-2xl border-[6px] border-[#EFE7DA] flex items-center justify-between -mt-28 z-10 relative">
+      <div className="w-full max-w-[420px] bg-white rounded-[40px] py-4 pr-6 pl-3 shadow-2xl border-[6px] border-[#B89B89] flex items-center justify-between -mt-28 z-10 relative">
         {/* Left: Tagline pushed to the far left edge */}
         <div className="flex-none self-start">
           <p className="font-serif text-[10px] italic font-bold leading-tight text-[#4E2A13] whitespace-nowrap not-italic [text-shadow:none]">
@@ -64,7 +64,7 @@ const ProductShowcase = () => {
       </div>
 
       {/* Increased pt-10 to pt-20 to push the button further down inside the container */}
-      <div className="w-full bg-[#A89482] flex flex-col items-center pt-20 pb-20 -mt-12 relative z-0">
+      <div className="w-full bg-[#B89B89] flex flex-col items-center pt-20 pb-20 -mt-12 relative z-0">
         <button className="bg-[#4E2A13] text-white px-8 py-3 rounded-md font-serif text-lg border border-white/20 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] flex items-center gap-2 active:scale-95 transition-transform [text-shadow:none]">
           How We Can Help <span>→</span>
         </button>
