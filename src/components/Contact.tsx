@@ -18,29 +18,45 @@ const Contact = () => {
       <h2 className="text-[40px] md:text-[52px] leading-tight text-[#4E2A13] mb-12 text-center font-sans not-italic">
         Thinking about <br /> working with us?
       </h2>
-      {/* 2. Contact Form Container */}
-      <div className="w-full max-w-[400px] md:max-w-[600px] space-y-6 mb-8">
-        <input
-          type="text"
-          placeholder="Name"
-          className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none"
-        />
-        <textarea
-          placeholder="Message"
-          rows={5}
-          className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none resize-none"
-        />
-      </div>
 
-      {/* 3. Send Message Button */}
-      <button className="w-full max-w-[400px] md:max-w-[600px] bg-[#6F4E37] text-[#EFE7DA] py-4 rounded-sm flex items-center justify-center gap-3 font-serif text-xl shadow-lg hover:brightness-110 transition-all mb-16">
-        Send message <FaPaperPlane className="text-lg" />
-      </button>
+      {/* 2. Contact Form - Wrap with <form> and add Formspree link */}
+      <form
+        action="https://formspree.io/f/mwvybznq" // Replace 'your-id-here' with your Formspree ID
+        method="POST"
+        className="w-full max-w-[400px] md:max-w-[600px] flex flex-col items-center"
+      >
+        <div className="w-full space-y-6 mb-8">
+          <input
+            type="text"
+            name="name" // REQUIRED for Formspree
+            placeholder="Name"
+            required
+            className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none"
+          />
+          <input
+            type="email"
+            name="email" // REQUIRED for Formspree
+            placeholder="Email"
+            required
+            className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none"
+          />
+          <textarea
+            name="message" // REQUIRED for Formspree
+            placeholder="Message"
+            rows={5}
+            required
+            className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none resize-none"
+          />
+        </div>
+
+        {/* 3. Send Message Button - Type changed to 'submit' */}
+        <button
+          type="submit"
+          className="w-full bg-[#6F4E37] text-[#EFE7DA] py-4 rounded-sm flex items-center justify-center gap-3 font-serif text-xl shadow-lg hover:brightness-110 transition-all mb-16"
+        >
+          Send message <FaPaperPlane className="text-lg" />
+        </button>
+      </form>
 
       {/* 4. Contact Information Section - HIDDEN ON MOBILE */}
       <div className="hidden md:block w-full max-w-[600px] space-y-4 mb-12 text-left">
@@ -52,7 +68,6 @@ const Contact = () => {
           look forward to hearing from you.
         </p>
 
-        {/* Decorative placeholders from Screenshot 2026-05-05 184251.png */}
         <div className="w-full h-20 bg-[#C5B49E]/50 rounded-md shadow-[4px_4px_8px_rgba(0,0,0,0.1)]"></div>
         <div className="w-full h-20 bg-[#C5B49E]/50 rounded-md shadow-[4px_4px_8px_rgba(0,0,0,0.1)]"></div>
       </div>
