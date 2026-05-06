@@ -2,7 +2,10 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <section className="w-full bg-[#EFE7DA] py-12 md:py-24 px-6 flex flex-col items-center -mt-20 relative z-20">
+    <section
+      id="projects"
+      className="w-full bg-[#EFE7DA] py-12 md:py-24 px-6 flex flex-col items-center -mt-20 relative z-20"
+    >
       {/* 
           Projects Label: 
           Scales dynamically from 64px up to 180px for 2xl displays.

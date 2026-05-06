@@ -1,3 +1,5 @@
+"use client";
+
 const Hero = () => {
   return (
     <section className="w-full h-auto bg-[#EFE7DA] flex items-start justify-center p-1 md:p-2 2xl:p-3">
@@ -15,7 +17,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-end md:pr-8 lg:pr-24 xl:pr-45">
-          <div className="py-10 md:mt-10 px-8 border-y border-[#EFE7DA]/10 md:w-90 md:h-50 lg:w-120 xl:w-140 md:border-none md:bg-[#744A36] md:rounded-2xl md:p-4 md:mb-12">
+          <div className="py-10 md:mt-10 px-8 border-y border-[#EFE7DA]/10 md:w-90 md:h-50 lg:w-120 xl:w-140 md:border-none bg-[#744A36] md:bg-[#744A36] md:rounded-2xl md:p-4 md:mb-12">
             <h2 className="text-xl xl:mb-10 font-sans font-semibold leading-tight mb-4 tracking-tight not-italic text-shadow-none md:text-2xl">
               Give Your Business a 5 ⭐ Digital Address.
             </h2>
@@ -28,10 +30,24 @@ const Hero = () => {
 
           {/* Container: md:pr-4 pulls the whole button group closer to the right edge */}
           <div className="py-12 px-4 md:py-0 md:pr-0 flex flex-row justify-center md:justify-end items-center gap-3 md:gap-4">
-            <button className="bg-white text-black whitespace-nowrap px-6 py-2.5 md:px-6 md:py-2.5 rounded-full text-[13px] md:text-sm 2xl:text-base font-bold shadow-[0_4px_12px_rgba(0,0,0,0.4)] transition-transform active:scale-95">
+            <button
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="bg-white text-black whitespace-nowrap px-6 py-2.5 md:px-6 md:py-2.5 rounded-full text-[13px] md:text-sm 2xl:text-base font-bold shadow-[0_4px_12px_rgba(0,0,0,0.4)] transition-transform active:scale-95"
+            >
               View Our Work
             </button>
-            <button className="bg-white text-black whitespace-nowrap px-6 py-2.5 md:px-6 md:py-2.5 rounded-full text-[13px] md:text-sm 2xl:text-base font-bold shadow-[0_4px_12px_rgba(0,0,0,0.4)] transition-transform active:scale-95">
+            <button
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="bg-white text-black whitespace-nowrap px-6 py-2.5 md:px-6 md:py-2.5 rounded-full text-[13px] md:text-sm 2xl:text-base font-bold shadow-[0_4px_12px_rgba(0,0,0,0.4)] transition-transform active:scale-95"
+            >
               Get in Touch
             </button>
           </div>

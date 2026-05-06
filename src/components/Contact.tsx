@@ -10,7 +10,10 @@ import {
 
 const Contact = () => {
   return (
-    <section className="w-full bg-[#EFE7DA] px-6 py-12 md:py-24 flex flex-col items-center">
+    <section
+      id="contact"
+      className="w-full bg-[#EFE7DA] px-6 py-12 md:py-24 flex flex-col items-center"
+    >
       {/* 1. Main Heading */}
       <h2 className="font-serif text-[40px] md:text-[52px] leading-tight text-[#4E2A13] mb-12 text-center">
         Thinking about <br /> working with us?
