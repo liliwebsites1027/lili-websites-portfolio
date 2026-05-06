@@ -18,37 +18,40 @@ const Contact = () => {
         Thinking about <br /> working with us?
       </h2>
 
-      {/* 2. Contact Form - Wrap with <form> and add Formspree link */}
+      {/* 2. Contact Form - Using NEXT_PUBLIC environment variable */}
       <form
-        action="https://formspree.io/f/mwvybznq" // Replace 'your-id-here' with your Formspree ID
+        action={`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`}
         method="POST"
         className="w-full max-w-100 md:max-w-150 flex flex-col items-center"
       >
         <div className="w-full space-y-6 mb-8">
           <input
             type="text"
-            name="name" // REQUIRED for Formspree
+            name="name"
             placeholder="Name"
             required
+            maxLength={50} // Limits name to 100 characters
             className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none"
           />
           <input
             type="email"
-            name="email" // REQUIRED for Formspree
+            name="email"
             placeholder="Email"
             required
+            maxLength={50} // Limits email to 150 characters
             className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none"
           />
           <textarea
-            name="message" // REQUIRED for Formspree
+            name="message"
             placeholder="Message"
             rows={5}
             required
+            maxLength={2000} // Prevents "novel-length" spam submissions
             className="w-full bg-[#C5B49E] border-none rounded-sm p-5 placeholder-[#4E2A13]/60 text-[#4E2A13] shadow-[inset_0_2px_4px_rgba(0,0,0,0.1),4px_4px_8px_rgba(0,0,0,0.1)] outline-none resize-none"
           />
         </div>
 
-        {/* 3. Send Message Button - Type changed to 'submit' */}
+        {/* 3. Send Message Button */}
         <button
           type="submit"
           className="w-full bg-[#6F4E37] text-[#EFE7DA] py-4 rounded-sm flex items-center justify-center gap-3 font-serif text-xl shadow-lg hover:brightness-110 transition-all mb-16"
