@@ -17,9 +17,8 @@ const TechStack = () => {
           - md+: Switched to a contained, rounded aesthetic to feel like a premium "card".
           - max-w limits the stretch on ultra-wide monitors.
       */}
-      <div className="w-full h-[240px] md:h-auto md:max-w-[90%] lg:max-w-[85%] xl:max-w-[80%] 2xl:max-w-[1600px] md:aspect-[21/9] bg-[#37250F] relative overflow-hidden md:rounded-[40px] lg:rounded-[60px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] -mt-12 md:-mt-16 z-10">
+      <div className="w-full h-auto aspect-[18/14] md:aspect-[21/9] md:max-w-[90%] lg:max-w-[85%] xl:max-w-[80%] 2xl:max-w-[1600px] bg-[#37250F] relative overflow-hidden md:rounded-[40px] lg:rounded-[60px] shadow-[0_20px_50px_rgba(0,0,0,0.3)] -mt-12 md:-mt-16 z-10">
         <div className="relative w-full h-full">
-          {/* Subtle vignette overlay to ground the image */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-20 pointer-events-none" />
 
           <Image
@@ -27,10 +26,11 @@ const TechStack = () => {
             alt="Tech Stack Showcase"
             fill
             /* 
-               - object-top: Ensures alignment matches your previous sections.
-               - md:object-center: Centers the asset for the desktop luxury view.
+               - pb-20 md:pb-0: Applies the shift only to mobile.
+               - object-contain: Keeps the image proportional inside the padded area.
+               - md:object-cover: Restores your original desktop filling behavior.
             */
-            className="object-contain md:object-cover object-top md:object-center transition-transform duration-1000"
+            className="object-contain pb-20 md:pb-0 object-top md:object-cover md:object-center transition-transform duration-1000"
             priority
           />
         </div>

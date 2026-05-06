@@ -15,10 +15,9 @@ const Contact = () => {
       className="w-full bg-[#EFE7DA] px-6 py-12 md:py-24 flex flex-col items-center"
     >
       {/* 1. Main Heading */}
-      <h2 className="font-serif text-[40px] md:text-[52px] leading-tight text-[#4E2A13] mb-12 text-center">
+      <h2 className="text-[40px] md:text-[52px] leading-tight text-[#4E2A13] mb-12 text-center font-sans not-italic">
         Thinking about <br /> working with us?
       </h2>
-
       {/* 2. Contact Form Container */}
       <div className="w-full max-w-[400px] md:max-w-[600px] space-y-6 mb-8">
         <input
@@ -72,7 +71,7 @@ const Contact = () => {
 
       {/* 6. Footer Branding */}
       <div className="text-center w-full overflow-hidden">
-        <h1 className="font-serif text-[64px] md:text-[120px] lg:text-[180px] italic font-light text-white drop-shadow-md tracking-tight opacity-95 whitespace-nowrap">
+        <h1 className="font-serif text-[52px] md:text-[120px] lg:text-[180px] italic font-light text-white drop-shadow-md tracking-tight opacity-95 whitespace-nowrap">
           lili websites
         </h1>
       </div>

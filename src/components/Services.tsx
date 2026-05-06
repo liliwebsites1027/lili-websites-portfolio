@@ -3,8 +3,10 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    /* py-10 and -mt-20 to keep the section pushed high and consistent */
-    <section className="w-full bg-[#EFE7DA] pb-12 pt-4 flex flex-col items-center overflow-hidden -mt-6 relative z-20">
+    <section
+      id="services"
+      className="w-full bg-[#EFE7DA] pb-12 pt-4 flex flex-col items-center overflow-hidden -mt-6 relative z-20"
+    >
       {/* 
           Services Label: 
           Mobile: Exactly as your OG design.

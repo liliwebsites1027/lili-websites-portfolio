@@ -1,20 +1,19 @@
-@import "tailwindcss"; /* This is the v4 way to pull in the core engine */
-@config "../../tailwind.config.ts"; /* This links your manual config file */
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 @layer base {
   body {
-    background-color: #e9e0d2; /* --background-cream */
-    color: #2d1e16; /* --text-main */
+    background-color: #e9e0d2;
+    color: #2d1e16;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Styling for the elegant italicized headers from image_a7503f.jpg */
+  /* Fixed: Removed the text-shadow line from here */
   h1,
   h2,
   h3 {
     @apply italic font-serif tracking-tight;
-    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -35,6 +34,6 @@
 }
 
 .bg-dark-section {
-  background-color: #5c4033; /* --accent-brown */
+  background-color: #5c4033;
   color: #ffffff;
 }
