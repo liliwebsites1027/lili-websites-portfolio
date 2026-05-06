@@ -3,7 +3,6 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaXTwitter,
-  FaFacebookF,
   FaYoutube,
   FaPaperPlane,
 } from "react-icons/fa6";
@@ -23,7 +22,7 @@ const Contact = () => {
       <form
         action="https://formspree.io/f/mwvybznq" // Replace 'your-id-here' with your Formspree ID
         method="POST"
-        className="w-full max-w-[400px] md:max-w-[600px] flex flex-col items-center"
+        className="w-full max-w-100 md:max-w-150 flex flex-col items-center"
       >
         <div className="w-full space-y-6 mb-8">
           <input
@@ -58,36 +57,49 @@ const Contact = () => {
         </button>
       </form>
 
-      {/* 4. Contact Information Section - HIDDEN ON MOBILE */}
-      <div className="hidden md:block w-full max-w-[600px] space-y-4 mb-12 text-left">
-        <h3 className="font-serif text-[28px] font-bold text-[#4E2A13]">
-          Contact Information
-        </h3>
-        <p className="font-sans text-[#4E2A13] opacity-80 leading-relaxed">
-          We&apos;re here to help and answer any question you might have. We
-          look forward to hearing from you.
-        </p>
-
-        <div className="w-full h-20 bg-[#C5B49E]/50 rounded-md shadow-[4px_4px_8px_rgba(0,0,0,0.1)]"></div>
-        <div className="w-full h-20 bg-[#C5B49E]/50 rounded-md shadow-[4px_4px_8px_rgba(0,0,0,0.1)]"></div>
-      </div>
-
       {/* 5. Social Media Dock */}
-      <div className="w-full max-w-[400px] md:max-w-[600px] border border-[#B0A08A] rounded-md p-4 flex flex-col items-center gap-4 mb-20">
+      <div className="w-full max-w-100 md:max-w-150 border border-[#B0A08A] rounded-md p-4 flex flex-col items-center gap-4 mb-20">
         <span className="font-serif text-[#6F4E37] text-lg">Social Media</span>
         <div className="flex justify-around w-full text-[#4E2A13] text-3xl">
-          <FaInstagram className="cursor-pointer hover:opacity-70 transition-opacity" />
-          <FaLinkedinIn className="cursor-pointer hover:opacity-70 transition-opacity" />
-          <FaXTwitter className="cursor-pointer hover:opacity-70 transition-opacity" />
-          <FaFacebookF className="cursor-pointer hover:opacity-70 transition-opacity" />
-          <FaYoutube className="cursor-pointer hover:opacity-70 transition-opacity" />
+          <a
+            href="https://www.instagram.com/lili_websites/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-all hover:scale-110 active:scale-95"
+          >
+            <FaInstagram className="cursor-pointer" />
+          </a>
+          <a
+            href="https://twitter.com/lili_websites"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-all hover:scale-110 active:scale-95"
+          >
+            <FaXTwitter className="cursor-pointer" />
+          </a>
+          <a
+            href="https://linkedin.com/in/lili-websites"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-all hover:scale-110 active:scale-95"
+          >
+            <FaLinkedinIn className="cursor-pointer" />
+          </a>
+          <a
+            href="https://youtube.com/@LiliWebsites"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-70 transition-all hover:scale-110 active:scale-95"
+          >
+            <FaYoutube className="cursor-pointer" />
+          </a>
         </div>
       </div>
 
       {/* 6. Footer Branding */}
       <div className="text-center w-full overflow-hidden">
-        <h1 className="font-serif text-[52px] md:text-[120px] lg:text-[180px] italic font-light text-white drop-shadow-md tracking-tight opacity-95 whitespace-nowrap">
-          lili websites
+        <h1 className="font-serif text-[42px] md:text-[120px] lg:text-[180px] italic font-light text-white drop-shadow-md tracking-tight opacity-95 whitespace-nowrap">
+          Lili_Websites
         </h1>
       </div>
     </section>

@@ -11,7 +11,7 @@ const About = () => {
           About Us Label: 
           Scales dynamically for md, lg, xl, and 2xl viewports.
       */}
-      <h2 className="font-serif text-[64px] md:text-[90px] lg:text-[120px] xl:text-[150px] 2xl:text-[180px] italic font-medium text-white mb-12 md:mb-16 drop-shadow-[-6px_4px_3px_rgba(0,0,0,0.4)] -mt-4 select-none">
+      <h2 className="text-[54px] md:text-[90px] lg:text-[120px] xl:text-[150px] 2xl:text-[180px] italic font-medium text-white mb-12 md:mb-16 drop-shadow-[-6px_4px_3px_rgba(0,0,0,0.4)] -mt-4 select-none">
         About Us
       </h2>
 

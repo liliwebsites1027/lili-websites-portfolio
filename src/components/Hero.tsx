@@ -3,7 +3,7 @@
 const Hero = () => {
   return (
     <section className="w-full h-auto bg-[#EFE7DA] flex items-start justify-center p-1 md:p-2 2xl:p-3">
-      <div className="max-w-105 md:max-w-[99%] xl:h-[99%] 2xl:max-w-[99.5%] w-full bg-[#4E2A13] rounded-[40px] md:rounded-[30px] overflow-hidden text-center md:text-left text-white shadow-2xl flex flex-col md:grid md:grid-cols-2 border-[8px] border-[#EFE7DA] pb-20 md:pb-12">
+      <div className="max-w-105 md:max-w-[99%] xl:h-[99%] 2xl:max-w-[99.5%] w-full bg-[#4E2A13] rounded-[40px] md:rounded-[30px] overflow-hidden text-center md:text-left text-white shadow-2xl flex flex-col md:grid md:grid-cols-2 border-8px border-[#EFE7DA] pb-20 md:pb-12">
         <div className="pt-12 pb-10 px-4 md:pl-8 md:pt-8 flex flex-col items-center md:items-start">
           <p className="text-2xl mb-2 font-serif italic md:text-2xl lg:text-3xl">
             2026
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-end md:pr-8 lg:pr-24 xl:pr-45">
-          <div className="py-10 md:mt-10 px-8 border-y border-[#EFE7DA]/10 md:w-90 md:h-50 lg:w-120 xl:w-140 md:border-none bg-[#744A36] md:bg-[#744A36] md:rounded-2xl md:p-4 md:mb-12">
+          <div className="py-10 md:mt-2 px-8 border-y border-[#EFE7DA]/10 md:w-90 md:h-50 lg:w-120 xl:w-140 md:border-none bg-[#744A36] md:bg-[#744A36] md:rounded-2xl md:p-4 md:mb-12">
             <h2 className="text-xl xl:mb-10 font-sans font-semibold leading-tight mb-4 tracking-tight not-italic text-shadow-none md:text-2xl">
               Give Your Business a 5 ⭐ Digital Address.
             </h2>

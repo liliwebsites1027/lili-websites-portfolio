@@ -20,7 +20,7 @@ const Projects = () => {
       <div className="w-full max-w-[450px] md:max-w-[95%] lg:max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1800px] bg-[#CAB0A0] rounded-[24px] md:rounded-[32px] p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 shadow-2xl">
         {/* Project Card 1 */}
         <div className="group cursor-pointer">
-          <div className="w-full aspect-[16/8] md:aspect-[4/5] bg-[#EFE7DA] rounded-[12px] md:rounded-[16px] shadow-inner overflow-hidden transition-transform duration-500 group-hover:scale-[1.01] relative">
+          <div className="w-full aspect-16/8 md:aspect-4/5 bg-[#EFE7DA] rounded-[12px] md:rounded-[16px] shadow-inner overflow-hidden transition-transform duration-500 group-hover:scale-[1.01] relative">
             <Image
               src="/ldc-banner.png"
               alt="LDC Enterprises"
@@ -30,8 +30,8 @@ const Projects = () => {
             />
           </div>
           <div className="mt-4 hidden md:block">
-            <p className="font-serif text-white/50 text-sm uppercase tracking-widest">
-              Case Study 01
+            <p className="text-white/50 text-sm uppercase tracking-widest">
+              Client Project
             </p>
             <h3 className="font-serif text-white text-2xl italic mt-1">
               LDC Enterprises
@@ -50,8 +50,8 @@ const Projects = () => {
             />
           </div>
           <div className="mt-4 hidden md:block">
-            <p className="font-serif text-white/50 text-sm uppercase tracking-widest">
-              Case Study 02
+            <p className="text-white/50 text-sm uppercase tracking-widest">
+              Project
             </p>
             <h3 className="font-serif text-white text-2xl italic mt-1">
               Urban Edge
@@ -61,7 +61,7 @@ const Projects = () => {
 
         {/* Project Card 3 */}
         <div className="group cursor-pointer md:col-span-2 lg:col-span-1">
-          <div className="w-full aspect-[16/8] md:aspect-[16/8] lg:aspect-[4/5] bg-[#EFE7DA] rounded-[12px] md:rounded-[16px] shadow-inner overflow-hidden transition-transform duration-500 group-hover:scale-[1.01] relative">
+          <div className="w-full aspect-16/8 md:aspect-16/8 lg:aspect-4/5 bg-[#EFE7DA] rounded-[12px] md:rounded-[16px] shadow-inner overflow-hidden transition-transform duration-500 group-hover:scale-[1.01] relative">
             <Image
               src="/bb-cover.png"
               alt="Lunaire"
@@ -70,11 +70,11 @@ const Projects = () => {
             />
           </div>
           <div className="mt-4 hidden md:block">
-            <p className="font-serif text-white/50 text-sm uppercase tracking-widest">
-              Case Study 03
+            <p className="text-white/50 text-sm uppercase tracking-widest">
+              Case Study
             </p>
             <h3 className="font-serif text-white text-2xl italic mt-1">
-              Lunaire
+              Boba Bliss
             </h3>
           </div>
         </div>

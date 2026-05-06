@@ -21,7 +21,7 @@ const Services = () => {
           - Mobile: w-full h-[600px] shadow-none -mt-6 (OG Design).
           - Desktop: max-w limits, rounded corners, and shadow for a "framed" look.
       */}
-      <div className="w-full h-[600px] md:h-auto md:aspect-[16/10] md:max-w-[90%] lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[1500px] bg-[#FAF6F0] relative overflow-hidden shadow-none md:shadow-2xl md:rounded-[60px] -mt-6 z-10">
+      <div className="w-full h-[600px] md:h-auto md:aspect-16/10 md:max-w-[90%] lg:max-w-[80%] xl:max-w-[70%] 2xl:max-w-[1500px] bg-[#FAF6F0] relative overflow-hidden shadow-none md:shadow-2xl md:rounded-[60px] -mt-6 z-10">
         {/* Mobile View: Strictly your OG layout and p-10 */}
         <div className="md:hidden relative p-10 w-full h-full">
           <Image
