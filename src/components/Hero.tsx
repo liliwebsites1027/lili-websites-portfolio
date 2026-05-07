@@ -31,6 +31,7 @@ const Hero = () => {
           {/* Container: md:pr-4 pulls the whole button group closer to the right edge */}
           <div className="py-12 px-4 md:py-0 md:pr-0 flex flex-row justify-center md:justify-end items-center gap-3 md:gap-4">
             <button
+              suppressHydrationWarning
               onClick={() =>
                 document
                   .getElementById("projects")
