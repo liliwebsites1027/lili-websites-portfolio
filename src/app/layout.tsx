@@ -18,7 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Global WhatsApp Icon - Stays on top of everything */}
         <div className="fixed bottom-8 right-8 z-[9999] flex flex-col gap-4">
           <a
-            href="https://wa.me/9967754569"
+            href="https://wa.me/8433564928"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative block transition-transform hover:scale-110 active:scale-95"
